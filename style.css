@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.logo {
+    height: auto;
+    margin: 0 auto;
+    width: 150px;
+    display: block;
+}
+
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+#bienvenida {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#bienvenida h1 {
+    font-size: 36px;
+}
+
+#bienvenida p {
+    font-size: 18px;
+}
+
+#servicios {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#servicios h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.servicio {
+    display: inline-block;
+    width: 30%;
+    margin: 0 10px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.servicio h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.servicio p {
+    font-size: 16px;
+}
+
+
+#galeria {
+    background-color: #e9ecef;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#galeria h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.imagen {
+    display: inline-block;
+    width: 30%;
+    margin: 0 10px;
+}
+
+.imagen img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.842);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 30px;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.boton:hover{
+    color: yellow;
+    background-color:rgb(42, 42, 214) ;
+    border-radius: 5px;
+    border: 2px solid white;
+}
