@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorias</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagenes/logo2.png" type="">
 
 </head>
 <body>
@@ -26,6 +27,237 @@
         </nav>
     </header>
 
+  <h2>Código Java del Formulario</h2>
+      <pre><code>
+
+        /*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package formulario2;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author OS
+ */
+public class Formulario2 {
+
+    /**
+     * @param args the command line arguments
+     */
+   public static void main(String[] args) {
+        Scanner leer=new Scanner(System.in);
+        
+        int opcion=0,opcion2=0,opcion3=0;
+        int volver;
+        int opcionFor;
+         String nombreLibro = "";
+         String estadoLibro = "";
+         String nombreDevuelve = "";
+         String nombreRecibe = "";
+         String nombreDelLibro = "";
+         String idLibro = "";
+         String generoLibro = "";
+         String fechaDevolucion = "";
+          
+         
+         String[] libros = {
+            "Quien se ha llevado mi queso",
+            "El principito",
+            "Don Quijote de la Mancha",
+            "La chica del tren",
+            "Resplandor"
+        };
+         
+         String[] tendencias = {
+            "El esplendor",
+            "Resolvemos asesinatos",
+            "Me piden que regrese",
+            "El coronel no tiene quien le escriba",
+            "Para siempre es mucho tiempo"
+        };
+       
+     
+        do{
+            System.out.println("Bienvenido/a a la biblioteca ");
+            System.out.println("Digite 1. para registrarse");
+            System.out.println("Digite 2. para solicitud de libro");
+            System.out.println("Digite 3. para reserva de libro");
+            System.out.println("Digite 4. para estatus del los libros");
+            System.out.println("Digite 5. para realizar una devolucion");
+            System.out.println("Digite 6. para ver libros en tendencia");
+            System.out.print("Opcion ");
+            opcion=leer.nextInt();
+               leer.nextLine();
+          
+         switch(opcion)
+             
+         {
+          
+                  case 1:
+                      System.out.println("Has elegido la opcion 1. ");
+                      
+             do{
+              
+                 System.out.println("Ingrese sus datos ");
+                 
+                 System.out.println("Nombre: ");
+                 String nombre = leer.nextLine();   
+                 
+                 System.out.println("Numero de identificacion: ");
+                 String id =leer.nextLine();
+                 
+                 System.out.print("Ingrese su fecha de nacimiento: ");
+                 String fechaNacimiento = leer.nextLine();
+           
+                 System.out.println("1. Eres estudiante");
+                 System.out.println("2. Eres docente");
+                 System.out.println("3. Eres invitado");
+                 opcion=leer.nextInt();
+                 leer.nextLine();
+                    
+                System.out.println("Volver al menu principal");
+                System.out.println("1. Si");
+                System.out.println("2. No");
+                leer.nextInt();
+
+                
+             }while(opcion2!=4);
+              break;
+             
+                  case 2:
+                     System.out.println("Has elegido la opcion 2. ");
+            do{
+                 System.out.println("Completa la informacion sobre los libros ");
+                 
+                 System.out.println("Nombre del libro");
+                 String nombre = leer.nextLine();
+                 
+                 System.out.println("ID del libro");
+                 String id =leer.nextLine();
+                 
+                 System.out.println("¿Que genero es el libro");
+                 String libro = leer.nextLine();
+                 
+                 System.out.print("Ingrese su fecha de prestamo: ");
+                 String fechaSolicitud = leer.nextLine();
+        
+                 System.out.println("1. Compra");
+                 System.out.println("2. Prestamo");
+                 System.out.println("3. Donación");
+                  System.out.println("4. Volver al menu principal");
+                 opcion=leer.nextInt();
+                    opcion2 = leer.nextInt();
+                    leer.nextLine(); 
+                       break;
+             }while(opcion!=4);
+            
+                  case 3:
+                 System.out.println("Has elegido la opcion 3. ");
+    do {
+        System.out.println("Seleccione una opcion:");
+        System.out.println("1. Ver libros disponibles");
+        System.out.println("2. Volver al menu principal"); 
+        System.out.print("Opcion: ");
+        opcionFor = leer.nextInt();
+        leer.nextLine(); // 
+
+        if (opcionFor == 1) {
+            System.out.println("Libros Disponibles");
+            
+            for (int i = 0; i < libros.length; i++) {
+                System.out.println((i + 1) + ". " + libros[i]);
+            }
+        } else if (opcionFor!= 2) {
+        
+        }
+
+    } while (opcionFor != 2); 
+    break;
+    
+                case 4:
+                    System.out.println("Has elegido la opcion 4. ");
+    
+    do {
+        System.out.println("Estado del Libro");
+        System.out.print("Ingrese el nombre del libro: ");
+         nombreLibro = leer.nextLine(); 
+        
+
+        System.out.print("Ingrese el estado del libro (Disponible,Prestado): ");
+        estadoLibro = leer.nextLine();
+
+        System.out.println("El libro \"" + nombreLibro + "\" tiene estado: " + estadoLibro);
+
+        System.out.println("Elija una opcion");
+        System.out.println("1. Ingresar otro estado de libro");
+        System.out.println("2. Volver al menú principal");
+        System.out.print("Opción: ");
+        volver = leer.nextInt();
+        leer.nextLine(); 
+    } while (volver!= 2); 
+    break;
+
+      case 5:
+          System.out.println("Has elegido la opcion 5. ");
+    do {
+        System.out.println("\nNombre de quien devuelve:");
+        nombreDevuelve = leer.nextLine();
+
+        System.out.println("Nombre de quien recibe:");
+        nombreRecibe = leer.nextLine();
+
+        System.out.println("Nombre del libro:");
+        nombreDelLibro = leer.nextLine();
+
+        System.out.println("ID del libro:");
+        idLibro = leer.nextLine();
+
+        System.out.println("Que genero es el libro");
+        generoLibro = leer.nextLine();
+
+        System.out.print("Ingrese su fecha de devolucion: ");
+        fechaDevolucion = leer.nextLine();
+
+        System.out.println("Seleccione una opcion");
+        System.out.println("1. Realizar otra devolucion");
+        System.out.println("2. Volver al menú principal");
+        System.out.print("Opcion: ");
+        opcion2 = leer.nextInt();
+        leer.nextLine();
+
+    } while (opcion2 != 2);
+    break;
+    
+    case 6:
+            
+    System.out.println("Has elegido la opcion 6");
+    for (int i = 0; i < tendencias.length; i++) {
+        System.out.println((i + 1) + ". " + tendencias[i]);
+    }
+    break;
+
+
+    }
+         
+         
+       }while(opcion!=6);        
+   
+        
+    }
+    
+}
+
+
+
+
+
+
+      </pre></code>
+
+
     <footer>
     <p>Biblioteca publica e institucional</p>
     <a href="#">Politica y tratamientos de datos</a>
@@ -42,3 +274,4 @@
 
 </body>
 </html>
+

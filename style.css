@@ -1,8 +1,24 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'fuente';
+  src: url('font/Gobold\ Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.fondo {
+  background-image: url('imagenes/pexels-element5-1370298.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 20px;
+  opacity: 0,5;
 }
 
 body {
@@ -11,44 +27,74 @@ body {
     background-color: #f4f4f4;
 }
 
-
 header {
     background-color: #333;
     padding: 10px 0;
 }
 
-.logo {
-    height: auto;
-    margin: 0 auto;
-    width: 150px;
-    display: block;
+#bienvenida {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
 }
 
+.logo {
+    height: 60px;
+    width: auto;
+    margin-right: 20px;
+}
+
+#bienvenida h1 {
+    color: white;
+    font-size: 24px;
+}
 
 nav ul {
     list-style: none;
-    text-align: center;
-    text-decoration: none;
+    padding: 0;
+    margin:  0;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #333;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
-    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+    font-family: 'fuente';
 }
 
+nav ul li a.boton {
+    background-color: #004aad;
+    color: white;
+    padding: 7px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+nav ul li a.boton:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);  
+    transform: translateY(-2px);               
+}
 
 #bienvenida {
-    background-color: #007BFF;
+    background-color: #004aad;
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px 20px;
+    font-family: 'fuente';
 }
 
 #bienvenida h1 {
@@ -64,6 +110,7 @@ nav ul li a {
     text-align: center;
     padding: 50px 20px;
 }
+
 
 #servicios h2 {
     font-size: 28px;
@@ -113,7 +160,7 @@ nav ul li a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos generales */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -137,7 +184,141 @@ footer a{
 
 .boton:hover{
     color: yellow;
-    background-color:rgb(42, 42, 214) ;
+    background-color:#004aad ;
     border-radius: 5px;
     border: 2px solid white;
 }
+
+
+#servicios {
+    background-color: #004aad; 
+    padding: 20px;
+    border-radius: 10px; 
+    color: rgb(0, 0, 0);
+    font-family: 'fuente';
+}
+
+h2{
+    color: white;
+
+
+}
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+
+.formulario {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+h2 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+
+.formulario .campo {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 15px;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+
+.boton {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: #357abd;
+}
+
+
+@media (max-width: 600px) {
+  section {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+
+.titulo{
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px; 
+  object-fit: cover; 
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.bases{
+  width: 100%;
+}
+
+.segundoFondo {
+  background-image: url("imagenes/fondo.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  padding: 50px 20px; 
+}
+
+.d-block w-100{
+  width: 100% ;
+}
+

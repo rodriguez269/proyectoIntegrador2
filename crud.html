@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Libros</title>
      <link rel="stylesheet" href="style.css">
+     <link rel="icon" href="imagenes/logo2.png" type="">
 
 
 </head>
 <body>
+
+  
     
 <header>
         <section id="bienvenida">
@@ -27,6 +30,105 @@
             </ul>
         </nav>
     </header>
+  <section class="segundoFondo">
+  <form class="formulario">
+    <h2>Contacto</h2>
+
+    <div class="campo">
+      <label for="primerNombre">Primer nombre</label>
+      <input type="text" id="primerNombre" name="primerNombre"  required>
+    </div>
+    
+    <div class="campo">
+      <label for="segundoNombre">Segundo nombre</label>
+      <input type="text" id="segundoNombre" name="segundoNombre"  required>
+    </div>
+
+    <div class="campo">
+      <label for="primerApellido">Primer apellido</label>
+      <input type="text" id="primerApellido" name="primerApellido"  required>
+    </div>
+
+    <div class="campo">
+      <label for="segundoApellido">Segundo apellido</label>
+      <input type="text" id="segundoApellido" name="segundoApellido"  required>
+    </div>
+
+    
+    <div class="campo">
+      <label for="segundoApellido">Número de identificación</label>
+      <input type="text" id="segundoApellido" name="segundoApellido"  required>
+    </div>
+
+    <div class="campo">
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email"  required>
+    </div>
+
+    <div class="campo">
+      <label for="asunto">Asunto</label>
+      <select id="asunto" name="asunto" required>
+        <option value="">Elegir una opción</option>
+        <option value="consulta">Prestamo</option>
+        <option value="sugerencia">Compra</option>
+        <option value="otro">Donación</option>
+         <option value="Comentario">Comentario</option>
+      </select>
+    </div>
+    
+       <div class="campo">
+      <label for="primerNombre">Nombre del libro</label>
+      <input type="text" id="primerNombre" name="primerNombre"  required>
+    </div>
+    
+    <div class="campo">
+      <label for="segundoNombre">ID del libro</label>
+      <input type="text" id="segundoNombre" name="segundoNombre"  required>
+    </div>
+
+    <div class="campo">
+      <label for="primerApellido">Fecha de prestamo</label>
+      <input type="text" id="primerApellido" name="primerApellido"  required>
+    </div>
+
+    
+    <div class="campo">
+      <label for="primerApellido">Fecha de devoluciones</label>
+      <input type="text" id="primerApellido" name="primerApellido"  required>
+    </div>
+
+        <div class="campo">
+      <label for="asunto">Estado del libro</label>
+      <select id="asunto" name="asunto" required>
+        <option value="">Elegir una opción</option>
+        <option value="consulta">Excelentes condiciones</option>
+        <option value="sugerencia">Averiado</option>
+      </select>
+    </div>
+
+ 
+
+    <div class="campo">
+      <labelrio for="mensaje">Comenta</labelrio>
+      <textarea id="mensaje" name="mensaje" placeholder="Agrega un comentario" required></textarea>
+    </div>
+
+    <button type="submit" class="boton">Enviar</button>
+  </form>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <footer>
     <p>Biblioteca publica e institucional</p>
